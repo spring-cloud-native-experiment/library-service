@@ -1,0 +1,14 @@
+
+zuul:
+  routes:
+    author-service:
+      path: /authors/**
+      url: http://localhost:8081/authors/
+    book-service:
+      path: /books/**
+      url: http://localhost:8081/books/
+    catalog-service:
+      path: /catalog/**
+      url: http://localhost:8082/catalog/
+  host:
+      socket-timeout-millis: 300000
