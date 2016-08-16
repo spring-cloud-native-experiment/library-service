@@ -21,10 +21,10 @@ public class CatalogService {
     }
 
     public List<Catalog> fetchAllCatalogs() {
-        ResponseEntity<List<Catalog>> rateResponse =
-                restTemplate.exchange("http://localhost:8080/catalog",
+        ResponseEntity<List<Catalog>> response =
+                restTemplate.exchange("http://localhost:8082/catalog",
                         HttpMethod.GET, null, new ParameterizedTypeReference<List<Catalog>>() {
                         });
-        return rateResponse.getBody();
+        return response.getBody();
     }
 }
