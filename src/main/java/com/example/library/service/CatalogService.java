@@ -22,7 +22,7 @@ public class CatalogService {
 
     public List<Catalog> fetchAllCatalogs() {
         ResponseEntity<List<Catalog>> response =
-                restTemplate.exchange("http://catalog-service/catalog",
+                restTemplate.exchange("http://localhost:8082/catalog",
                         HttpMethod.GET, null, new ParameterizedTypeReference<List<Catalog>>() {
                         });
         return response.getBody();

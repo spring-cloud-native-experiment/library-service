@@ -16,7 +16,7 @@ public class BookService {
     }
 
     public Book findBookById(Long bookId) {
-        return restTemplate.getForObject("http://book-service/books/" + bookId, Book.class);
+        return restTemplate.getForObject("http://localhost:8081/books/" + bookId, Book.class);
     }
 
 }
