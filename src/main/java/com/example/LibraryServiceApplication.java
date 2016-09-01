@@ -1,4 +1,4 @@
-package com.example.library;
+package com.example;
 
 import feign.RequestInterceptor;
 import org.springframework.boot.SpringApplication;
@@ -25,7 +25,7 @@ public class LibraryServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(LibraryServiceApplication.class, args);
     }
-    
+
     @Bean
     public RequestInterceptor oauth2FeignRequestInterceptor(OAuth2ClientContext oauth2ClientContext,
                                                             OAuth2ProtectedResourceDetails resource) {

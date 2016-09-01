@@ -1,6 +1,5 @@
-package com.example.library.client;
+package com.example.catalog;
 
-import com.example.library.domain.Catalog;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

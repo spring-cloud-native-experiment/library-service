@@ -1,7 +1,5 @@
-package com.example.library.service;
+package com.example.book;
 
-import com.example.library.client.BookServiceClient;
-import com.example.library.domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

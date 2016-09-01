@@ -1,9 +1,9 @@
-package com.example.library.web;
+package com.example.library;
 
-import com.example.library.domain.Book;
-import com.example.library.domain.Catalog;
-import com.example.library.service.BookService;
-import com.example.library.service.CatalogService;
+import com.example.book.Book;
+import com.example.book.BookService;
+import com.example.catalog.Catalog;
+import com.example.catalog.CatalogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
