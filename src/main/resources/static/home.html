@@ -1,0 +1,17 @@
+<h1>Library</h1>
+<div ng-show="authenticated">
+    <div class="list-group">
+        <div class="list-group-item" ng-repeat="catalog in controller.catalog">
+            <span class="badge">{{catalog.books.length}}</span>
+            <h4 class="list-group-item-heading">{{catalog.name}}</h4>
+            <div>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="book in catalog.books">{{book.name}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-show="!authenticated">
+    <p>Login to browse the library</p>
+</div>
